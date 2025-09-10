@@ -1,0 +1,60 @@
+#navbar {
+    --nav-icon-size: clamp(2.25rem, 10vw, 3rem);
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--glass);
+    padding: calc(var(--nav-icon-size) * 0.15) calc(var(--nav-icon-size) * 0.45);
+    border-radius: var(--nav-icon-size);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--glass-shadow);
+    display: flex;
+    align-items: center;
+    border: solid 0.5px rgba(240, 248, 255, 0.15);
+    gap: calc(var(--nav-icon-size) * 0.2);
+    z-index: 9998;
+    transition: background 0.5s ease-in-out;
+}
+
+.divider {
+    box-shadow: inset 0.5px 0.5px 1.5px rgba(250, 250, 250, 0.65);
+    width: calc(var(--nav-icon-size) * 0.125);
+    height: var(--nav-icon-size);
+    border-radius: 2px;
+    margin: 0 4px;
+}
+
+#navbar a:hover {
+    scale: 1.1;
+}
+
+.nav-icon {
+    transition:
+        filter 0.25s ease-in-out,
+        scale 0.25s ease-in-out;
+}
+
+#navbar a:active .nav-icon {
+    scale: 0.95;
+    transition: scale 0.25s ease-in-out;
+}
+
+#navbar a:hover .nav-icon {
+    filter: drop-shadow(2px 1px 2px var(--primary-color1-opaque));
+    transition: filter 0.25s ease-in-out;
+}
+
+.theme-button {
+    font-size: calc(var(--nav-icon-size) * 0.75) !important;
+}
+
+.scheme-button-wrapper {
+    position: relative;
+}
+
+.scheme-selected {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}

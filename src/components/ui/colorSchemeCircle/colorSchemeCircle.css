@@ -1,0 +1,5 @@
+.colorScheme-circle {
+    width: 24px;
+    height: 24px;
+    transition: scale 0.25s ease-in-out;
+}

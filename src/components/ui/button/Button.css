@@ -1,0 +1,17 @@
+.button {
+    font-size: 1em;
+    padding: 2px;
+    transition:
+        box-shadow 0.25s ease-in-out,
+        background 0.5s ease-in-out;
+    box-shadow: var(--glass-shadow-inset);
+    background: var(--glass);
+    backdrop-filter: blur(8px);
+}
+
+.button:hover {
+    transition:
+        box-shadow 0.25s ease-in-out,
+        background 0.5s ease-in-out;
+    box-shadow: var(--glass-shadow-inset-hover);
+}

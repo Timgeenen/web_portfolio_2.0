@@ -1,0 +1,76 @@
+.popUp {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    width: clamp(280px, 90vw, 420px);
+    position: fixed;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    background: var(--glass);
+    backdrop-filter: blur(25px);
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid var(--primary-color1);
+    z-index: 9999;
+    transition:
+        border 0.5s ease-in-out,
+        background 0.5s ease-in-out;
+}
+
+.popUp-header {
+    font-size: 1.25em;
+    color: var(--primary-color1);
+    transition: color 0.5s ease-in-out;
+}
+
+.popUp-text {
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+.popUp-button {
+    position: relative;
+    font-size: 1em;
+    border-radius: 0.25em;
+    padding: 0.2em 0.6em;
+    background: var(--primary-color1);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition:
+        background 0.5s ease-in-out,
+        border 0.5s ease-in-out;
+    border: none;
+}
+
+.popUp-button::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: var(--primary-color2);
+    z-index: -1;
+    border-radius: inherit;
+    transition:
+        padding 0.25s ease-in-out,
+        border-radius 0.25s ease-in-out,
+        background 0.5s ease-in-out;
+}
+
+.popUp-button:hover::before {
+    padding: 0.1em;
+    border-radius: 0.325em;
+    transition:
+        padding 0.25s ease-in-out,
+        border-radius 0.25s ease-in-out,
+        background 0.5s ease-in-out;
+}

@@ -1,0 +1,11 @@
+.icon-button {
+    font-size: var(--nav-icon-size);
+    color: var(--nav-icon-color);
+    display: flex;
+    transition: color 0.5s ease-in-out;
+}
+
+.icon-button:hover {
+    color: var(--nav-icon-color-hover);
+    transition: color 0.25s ease-in-out;
+}

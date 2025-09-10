@@ -1,0 +1,32 @@
+.dropdown-list {
+    --dropdown-list-gap: 6px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: 1fr;
+    gap: var(--dropdown-list-gap);
+    bottom: calc(-1 * var(--dropdown-list-gap));
+    transform: translateY(100%);
+    line-height: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.dropdown-list.active {
+    overflow: visible;
+    grid-template-columns: 1fr;
+}
+
+.dropdown-option {
+    transition: scale 0.25s ease-in-out;
+}
+
+.dropdown-option:hover .colorScheme-circle {
+    scale: 1.1;
+    transition: scale 0.25 ease-in-out;
+}
+
+.dropdown-option:active {
+    scale: 0.95;
+    transition: scale 0.25s ease-in-out;
+}

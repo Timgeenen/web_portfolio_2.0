@@ -1,0 +1,31 @@
+.toTopButton {
+    --toTopButton-spacing: clamp(12px, 5vw, 50px);
+    position: fixed;
+    right: var(--toTopButton-spacing);
+    bottom: var(--toTopButton-spacing);
+    background: var(--glass);
+    padding: 4px;
+    backdrop-filter: blur(25px);
+    border-radius: 4px;
+    box-shadow: 0 0 1px var(--primary-color1);
+    z-index: 100;
+    transition:
+        box-shadow 0.25s ease-in-out,
+        background 0.5s ease-in-out,
+        scale 0.25s ease-in-out;
+    font-size: 2rem;
+}
+
+.toTopButton:hover {
+    box-shadow: 0 0 3px var(--primary-color1);
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+.toTopButton:active {
+    scale: 0.95;
+    transition: scale 0.25s ease-in-out;
+}
+
+.toTopButton-arrow {
+    transition: color 0.25s ease-in-out;
+}

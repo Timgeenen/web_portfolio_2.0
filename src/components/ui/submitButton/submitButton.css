@@ -1,0 +1,129 @@
+.submit-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 18.5em;
+}
+
+.submit-button {
+    position: relative;
+    font-weight: 700;
+    background: var(--primary-color1);
+    border: none;
+    color: white;
+    transition:
+        background 0.5s ease-in-out,
+        color 0.5s ease-in-out;
+}
+
+.submit-button-overflow-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    padding: 0.2em 1em;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: padding-right 0.25s ease-in-out;
+}
+
+.submit-button-paperPlane {
+    font-size: 0;
+    transition: font-size 0.25s ease-in-out;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.submit-button:disabled {
+    color: var(--text-opaque);
+}
+
+.submit-button:hover .submit-button-overflow-wrapper {
+    transition: padding-right 0.25s ease-in-out;
+    padding-right: 2.5em;
+}
+
+.submit-button:hover .submit-button-paperPlane {
+    font-size: 1em;
+    transition: font-size 0.25s ease-in-out;
+}
+
+.submit-button::after,
+.submit-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+        from var(--angle),
+        var(--primary-color1),
+        var(--primary-color2),
+        var(--primary-color1)
+    );
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: -1;
+    border-radius: calc(10px + 0.15em);
+    transition: padding 0.25s ease-in-out;
+    animation: 2s linear infinite rotategradient;
+    animation-play-state: paused;
+}
+
+.submit-button::before {
+    filter: blur(0px);
+    transition: filter 0.25s ease-in-out;
+    opacity: 0.5;
+}
+
+.submit-button:hover::before,
+.submit-button:hover::after {
+    padding: 0.15em;
+    animation-play-state: running;
+}
+
+.submit-button:hover::before {
+    transition:
+        filter 0.35s ease-in-out,
+        padding 0.25s ease-in-out;
+    filter: blur(0.25em);
+}
+
+.submit-button-paperPlane.active {
+    animation: 0.5s linear paperPlane;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes rotategradient {
+    0% {
+        --angle: 0deg;
+    }
+
+    100% {
+        --angle: 360deg;
+    }
+}
+
+@keyframes paperPlane {
+    0% {
+        transform: translateX(0) translateY(-50%);
+    }
+    49% {
+        transform: translateX(250%) translateY(-250%);
+    }
+    50% {
+        transform: translateX(250%) translateY(250%);
+    }
+    51% {
+        transform: translateX(-250%) translateY(250%);
+    }
+    100% {
+        transform: translateX(0) translateY(-50%);
+    }
+}

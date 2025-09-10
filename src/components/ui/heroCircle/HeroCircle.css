@@ -1,0 +1,22 @@
+.heroCircle-circle-svg {
+    width: 120px;
+}
+
+.heroCircle-circle-svg {
+    fill: var(--background-color);
+    transition: fill 0.5s ease-in-out;
+}
+
+.heroCircle-heroImg {
+    bottom: 0;
+    filter: var(--hero-grayscale);
+    transition: filter 0.5s ease-in-out;
+    aspect-ratio: 1/1.353;
+    object-fit: contain;
+}
+
+@media (width > 378px) {
+    .heroCircle-circle-svg {
+        width: clamp(340px, 40vw, 500px);
+    }
+}

@@ -1,0 +1,86 @@
+.testimonial {
+    --testimonial-icon-size: 40px;
+    width: clamp(300px, 90vw, 700px);
+    background: var(--background-color-light);
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.testimonial-quotes {
+    --quote-size: clamp(4.5rem, 12.5vw, 8rem);
+    position: absolute;
+    font-size: var(--quote-size);
+    top: min(calc(8rem - var(--quote-size)), 10px);
+    right: 0.1em;
+    color: var(--text-opaque);
+    opacity: 0.25;
+    transition:
+        color 0.5s ease-in-out,
+        font-size 0.25s ease-in-out;
+}
+
+.testimonial-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.testimonial-icon {
+    width: var(--testimonial-icon-size);
+    height: var(--testimonial-icon-size);
+    display: flex;
+    justify-content: center;
+    border-radius: calc(var(--testimonial-icon-size) * 0.5);
+    background: var(--background-color);
+    overflow: hidden;
+    border: 0.5px solid var(--primary-color1);
+    transition:
+        border-color 0.5s ease-in-out,
+        background 0.5s ease-in-out,
+        border-radius 0.25s ease-in-out;
+}
+
+.testimonial-image {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.testimonial-credentials {
+    line-height: 1.1;
+}
+
+.testimonial-name {
+    font-size: 1.25em;
+    font-weight: 900;
+}
+
+.testimonial-function {
+    font-size: 0.875em;
+    font-weight: 400;
+}
+
+.testimonial-rating {
+    display: flex;
+    font-size: 1.125em;
+    font-weight: 800;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+}
+
+.testimonial-rating-star {
+    fill: var(--primary-color1);
+    transition: fill 0.5s ease-in-out;
+}
+
+.testimonial-review {
+    font-size: 0.875em;
+}

@@ -1,0 +1,43 @@
+.tech-page-wrapper {
+    height: 100dvh;
+    position: relative;
+    margin-top: -80dvh;
+}
+
+.tech {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(var(--background-color-offset), transparent);
+    border-top-left-radius: clamp(40px, 15vw, 200px);
+    border-top-right-radius: clamp(40px, 15vw, 200px);
+    height: 100%;
+}
+
+.tech-contentWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 24rem;
+    width: 100%;
+}
+
+.tech-header {
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: clamp(6rem, 35vw, 18rem);
+    line-height: 1;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 0;
+    max-width: 900px;
+}
