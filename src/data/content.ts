@@ -90,18 +90,34 @@ export const PROJECTS_DATA: {
     url: string;
 }[] = [
     {
+        title: 'Designer Portfolio',
+        img1: {
+            src: '/fugasha_1.webp',
+            alt: 'Portfolio first view'
+        },
+        img2: {
+            src: '/fugasha_2.webp',
+            alt: 'Portfolio design process card'
+        },
+        img3: {
+            src: '/fugasha_3.webp',
+            alt: 'Portfolio connect section'
+        },
+        url: 'https://fugasha.com'
+    },
+    {
         title: 'Developer Portfolio',
         img1: {
             src: '/portfolio_1.webp',
-            alt: 'Portfolio First View Screenshot',
+            alt: 'Portfolio First View',
         },
         img2: {
             src: '/portfolio_2.webp',
-            alt: 'Portfolio About Page Screenshot',
+            alt: 'Portfolio About Page',
         },
         img3: {
             src: '/portfolio_3.webp',
-            alt: 'Portfolio Hobby Page Screenshot',
+            alt: 'Portfolio Hobby Page',
         },
         url: '',
     },
@@ -109,15 +125,15 @@ export const PROJECTS_DATA: {
         title: 'Web Portfolio',
         img1: {
             src: '/rica1.webp',
-            alt: 'Japanese Teacher Portfolio First View Screenshot',
+            alt: 'Japanese Teacher Portfolio First View',
         },
         img2: {
             src: '/rica2.webp',
-            alt: 'Japanese Teacher Portfolio Screenshot',
+            alt: 'Japanese Teacher Portfolio',
         },
         img3: {
             src: '/rica3.webp',
-            alt: 'Japanese Teacher Portfolio About Page Screenshot',
+            alt: 'Japanese Teacher Portfolio About Page',
         },
         url: 'https://japanesewithrica.com',
     },
@@ -125,15 +141,15 @@ export const PROJECTS_DATA: {
         title: 'Amazon Clone',
         img1: {
             src: '/amazon_clone1.webp',
-            alt: 'Amazon Clone Project First View Screenshot',
+            alt: 'Amazon Clone Project First View',
         },
         img2: {
             src: '/amazon_clone2.webp',
-            alt: 'Amazon Clone Project Item Basket Screenshot',
+            alt: 'Amazon Clone Project Item Basket',
         },
         img3: {
             src: '/amazon_clone3.webp',
-            alt: 'Amazon Clone Project Item List Screenshot',
+            alt: 'Amazon Clone Project Item List',
         },
         url: 'https://clone-fd8f3.web.app/',
     },
