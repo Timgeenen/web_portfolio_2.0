@@ -2,14 +2,34 @@ import type { ColorSchemeData } from './types';
 
 export const TECH_DATA: { icon: string; title: string; alt: string }[] = [
     {
-        icon: '/css_logo.webp',
-        title: 'CSS',
-        alt: 'CSS logo',
+        icon: '/react_logo.webp',
+        title: 'REACT',
+        alt: 'React logo',
     },
     {
         icon: '/gsap_logo.webp',
         title: 'GSAP',
         alt: 'GSAP logo',
+    },
+    {
+        icon: '/astro_logo.svg',
+        title: 'Astro',
+        alt: 'Astro logo',
+    },
+    {
+        icon: '/typescript_logo.webp',
+        title: 'TYPESCRIPT',
+        alt: 'TypeScript logo',
+    },
+    {
+        icon: '/css_logo.webp',
+        title: 'CSS',
+        alt: 'CSS logo',
+    },
+    {
+        icon: '/tailwind_logo.webp',
+        title: 'TAILWIND',
+        alt: 'Tailwind CSS logo',
     },
     {
         icon: '/html_logo.webp',
@@ -32,16 +52,6 @@ export const TECH_DATA: { icon: string; title: string; alt: string }[] = [
         alt: 'Node.js logo',
     },
     {
-        icon: '/react_logo.webp',
-        title: 'REACT',
-        alt: 'React logo',
-    },
-    {
-        icon: '/typescript_logo.webp',
-        title: 'TYPESCRIPT',
-        alt: 'TypeScript logo',
-    },
-    {
         icon: '/wordpress_logo.webp',
         title: 'WORDPRESS',
         alt: 'WordPress logo',
@@ -55,11 +65,6 @@ export const TECH_DATA: { icon: string; title: string; alt: string }[] = [
         icon: '/socketio_logo.webp',
         title: 'SOCKET IO',
         alt: 'Socket.IO logo',
-    },
-    {
-        icon: '/tailwind_logo.webp',
-        title: 'TAILWIND',
-        alt: 'Tailwind CSS logo',
     },
     {
         icon: '/elementor_logo.webp',
@@ -93,17 +98,17 @@ export const PROJECTS_DATA: {
         title: 'Designer Portfolio',
         img1: {
             src: '/fugasha_1.webp',
-            alt: 'Portfolio first view'
+            alt: 'Portfolio first view',
         },
         img2: {
             src: '/fugasha_2.webp',
-            alt: 'Portfolio design process card'
+            alt: 'Portfolio design process card',
         },
         img3: {
             src: '/fugasha_3.webp',
-            alt: 'Portfolio connect section'
+            alt: 'Portfolio connect section',
         },
-        url: 'https://fugasha.com'
+        url: 'https://fugasha.com',
     },
     {
         title: 'Developer Portfolio',
