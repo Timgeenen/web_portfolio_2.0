@@ -33,6 +33,10 @@ function useCursor() {
         const controller = new AbortController();
         const { signal } = controller;
 
+        const setX = gsap.quickSetter(cursorRef.current, 'x', 'px');
+        const setY = gsap.quickSetter(cursorRef.current, 'y', 'px');
+        const setRotation = gsap.quickSetter(cursorRef.current, 'rotation', 'deg');
+
         handleDrawCursor();
         document.addEventListener('click', handleClick, { signal });
         document.addEventListener('mousemove', handleMouseMove, { signal });
@@ -69,11 +73,9 @@ function useCursor() {
                 currentX += (cursorPositionRef.current.x - currentX) * 0.5 * delta;
                 currentY += (cursorPositionRef.current.y - currentY) * 0.5 * delta;
 
-                gsap.set(cursorRef.current, {
-                    x: currentX - offset,
-                    y: currentY - offset,
-                    rotation: rotationRef.current,
-                });
+                setX(currentX - offset);
+                setY(currentY - offset);
+                setRotation(rotationRef.current);
 
                 requestAnimationFrame(draw);
             }

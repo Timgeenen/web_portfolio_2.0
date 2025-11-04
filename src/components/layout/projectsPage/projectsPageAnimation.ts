@@ -16,6 +16,15 @@ export default function projectsPageAnimation() {
     let scrollPercent = 0;
     let needsUpdate = false;
 
+    const quickSetters = new Map();
+    projects.map((project) => {
+        quickSetters.set(project, {
+            setxPercent: gsap.quickSetter(project, 'xPercent'),
+            setyPercent: gsap.quickSetter(project, 'yPercent'),
+            setRotation: gsap.quickSetter(project, 'rotation', 'deg'),
+        });
+    });
+
     function rotateWheel() {
         if (needsUpdate) {
             needsUpdate = false;
@@ -23,11 +32,10 @@ export default function projectsPageAnimation() {
                 const newRotation = initialProjectData[i]!.rotation - maxRotation * scrollPercent;
                 let newRadian = initialProjectData[i]!.rad - scrollPercent * maxRad;
                 newRadian = newRadian < 0 ? (newRadian += Math.PI * 2) : newRadian;
-                gsap.set(project, {
-                    xPercent: Math.cos(newRadian) * 150 - 50,
-                    yPercent: Math.sin(newRadian) * 150,
-                    rotation: newRotation,
-                });
+                const { setxPercent, setyPercent, setRotation } = quickSetters.get(project);
+                setxPercent(Math.cos(newRadian) * 150 - 50);
+                setyPercent(Math.sin(newRadian) * 150);
+                setRotation(newRotation);
             });
         }
         requestAnimationFrame(rotateWheel);
@@ -45,6 +53,7 @@ export default function projectsPageAnimation() {
             scrub: 1,
             pin: true,
             pinSpacing: true,
+            invalidateOnRefresh: true,
             anticipatePin: 0.5,
             snap: {
                 snapTo: 'labels',
@@ -108,6 +117,7 @@ export default function projectsPageAnimation() {
     const gradientTween = getGradientAnimation({ gradientId: 'project-ellipse-gradient' });
     const gradientTl = gsap.timeline({
         scrollTrigger: {
+            invalidateOnRefresh: true,
             trigger: '.projects-page-wrapper',
             start: 'top bottom',
             end: `+=${(projects.length + 2) * 1000}`,
