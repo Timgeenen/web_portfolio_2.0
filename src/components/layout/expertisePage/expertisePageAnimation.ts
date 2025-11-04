@@ -12,6 +12,7 @@ export default function ExpertisePageAnimation() {
                 start: () => 'top 80%',
                 end: () => 'top 70%',
                 scrub: 2,
+                invalidateOnRefresh: true,
             },
         })
         .from(ctaButton, {
@@ -32,6 +33,7 @@ function createTimeline(selector: Element) {
                 start: () => 'center 80%',
                 end: () => 'center 70%',
                 scrub: 2,
+                invalidateOnRefresh: true,
             },
         })
         .from(selector, {

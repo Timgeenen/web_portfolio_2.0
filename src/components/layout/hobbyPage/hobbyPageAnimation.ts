@@ -16,6 +16,7 @@ function createTimeline(element: Element) {
         .timeline({
             scrollTrigger: {
                 trigger: element,
+                invalidateOnRefresh: true,
                 start: () => 'center 90%',
                 end: () => 'center 70%',
                 scrub: 2,

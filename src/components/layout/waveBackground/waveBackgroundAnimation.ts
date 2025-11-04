@@ -8,6 +8,7 @@ export default function waveBackgroundAnimation() {
 
     const tl = gsap.timeline({
         scrollTrigger: {
+            invalidateOnRefresh: true,
             trigger: '.wave-background',
             start: 'top bottom',
             end: 'bottom top',

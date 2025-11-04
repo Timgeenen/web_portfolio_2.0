@@ -3,6 +3,7 @@ import gsap from 'gsap';
 export default function timelinePageAnimation() {
     const tl = gsap.timeline({
         scrollTrigger: {
+            invalidateOnRefresh: true,
             trigger: '.timeline-page-wrapper',
             pin: true,
             anticipatePin: 0.5,

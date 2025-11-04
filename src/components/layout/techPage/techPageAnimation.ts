@@ -11,12 +11,14 @@ export default function techPageAnimation() {
             scrub: 1,
             pin: true,
             pinSpacing: true,
+            invalidateOnRefresh: true,
             anticipatePin: 0.5,
         },
     });
 
     const textTl = gsap.timeline({
         scrollTrigger: {
+            invalidateOnRefresh: true,
             trigger: '.tech-page-wrapper',
             start: 'top bottom',
             scrub: 2.5,

@@ -14,7 +14,6 @@ function BoxGrid({ ...props }: Props) {
     const { boxes, containerStyles } = useCreateGrid({ ...props });
     const gridWidth = props.gridWidth ?? 100;
     const gridHeight = (gridWidth / props.grid[0]) * props.grid[1];
-    // useBoxGridAnimation();
     return (
         <>
             <svg
@@ -52,7 +51,6 @@ function BoxGrid({ ...props }: Props) {
                 </defs>
                 {...boxes}
                 <rect
-                    // fill='url(#radial-gradient-fade)'
                     id="boxGrid-mask"
                     fill="var(--background-color)"
                     mask="url(#radial-fade-mask)"

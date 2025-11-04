@@ -9,6 +9,7 @@ export default function contactPageAnimation() {
             start: 'top bottom',
             end: 'bottom bottom',
             scrub: 2,
+            invalidateOnRefresh: true,
         },
     });
 
@@ -25,6 +26,7 @@ export default function contactPageAnimation() {
 
     const contactPageTimeline = gsap.timeline({
         scrollTrigger: {
+            invalidateOnRefresh: true,
             trigger: '.contact-page',
             start: () => 'top 60%',
             end: () => 'top center',

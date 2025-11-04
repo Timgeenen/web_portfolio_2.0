@@ -9,6 +9,7 @@ export default function bioPageAnimation() {
             end: () => '+=2500px',
             scrub: true,
             pin: true,
+            invalidateOnRefresh: true,
         },
     });
 

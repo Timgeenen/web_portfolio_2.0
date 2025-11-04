@@ -6,6 +6,7 @@ export default function testimonialPageAnimation() {
     let started = false;
     const tl = gsap.timeline({
         scrollTrigger: {
+            invalidateOnRefresh: true,
             trigger: '.testimonial-page',
             start: 'top bottom',
             end: 'bottom top',

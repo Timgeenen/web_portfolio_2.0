@@ -10,6 +10,7 @@ import {
     Navbar,
     ProjectsPage,
     TechPage,
+    TestimonialPage,
     TimelinePage,
     WaveBackground,
 } from '@Layouts';

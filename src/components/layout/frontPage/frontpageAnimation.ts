@@ -10,6 +10,7 @@ export default function frontpageAnimation(): gsap.core.Timeline {
             scrub: true,
             start: 'top top',
             end: '+=1000',
+            invalidateOnRefresh: true,
         },
     });
 

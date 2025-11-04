@@ -5,6 +5,7 @@ export default function heroCircleAnimation() {
     const animations: gsap.core.Tween[] = [getGradientAnimation({ gradientId: 'circle-gradient' })];
     const tl = gsap.timeline({
         scrollTrigger: {
+            invalidateOnRefresh: true,
             trigger: '#frontpage',
             start: 'top bottom',
             end: 'bottom top',
