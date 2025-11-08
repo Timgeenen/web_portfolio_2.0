@@ -3,7 +3,7 @@ import type { ColorSchemeData } from './types';
 export const TECH_DATA: { icon: string; title: string; alt: string }[] = [
     {
         icon: '/react_logo.webp',
-        title: 'REACT',
+        title: 'React',
         alt: 'React logo',
     },
     {
@@ -18,7 +18,7 @@ export const TECH_DATA: { icon: string; title: string; alt: string }[] = [
     },
     {
         icon: '/typescript_logo.webp',
-        title: 'TYPESCRIPT',
+        title: 'Typescript',
         alt: 'TypeScript logo',
     },
     {
@@ -28,7 +28,7 @@ export const TECH_DATA: { icon: string; title: string; alt: string }[] = [
     },
     {
         icon: '/tailwind_logo.webp',
-        title: 'TAILWIND',
+        title: 'Tailwind',
         alt: 'Tailwind CSS logo',
     },
     {
@@ -38,7 +38,7 @@ export const TECH_DATA: { icon: string; title: string; alt: string }[] = [
     },
     {
         icon: '/javascript_logo.webp',
-        title: 'JAVASCRIPT',
+        title: 'Javascript',
         alt: 'JavaScript logo',
     },
     {
@@ -48,32 +48,32 @@ export const TECH_DATA: { icon: string; title: string; alt: string }[] = [
     },
     {
         icon: '/node_logo.webp',
-        title: 'NODEJS',
+        title: 'NodeJS',
         alt: 'Node.js logo',
     },
     {
         icon: '/wordpress_logo.webp',
-        title: 'WORDPRESS',
+        title: 'WordPress',
         alt: 'WordPress logo',
     },
     {
         icon: '/mongodb_logo.webp',
-        title: 'MONGO DB',
+        title: 'Mongo DB',
         alt: 'MongoDB logo',
     },
     {
         icon: '/socketio_logo.webp',
-        title: 'SOCKET IO',
+        title: 'Socket IO',
         alt: 'Socket.IO logo',
     },
     {
         icon: '/elementor_logo.webp',
-        title: 'ELEMENTOR',
+        title: 'Elementor',
         alt: 'Elementor logo',
     },
     {
         icon: '/figma_logo.webp',
-        title: 'FIGMA',
+        title: 'Figma',
         alt: 'Figma logo',
     },
 ];
@@ -124,7 +124,7 @@ export const PROJECTS_DATA: {
             src: '/portfolio_3.webp',
             alt: 'Portfolio Hobby Page',
         },
-        url: '',
+        url: 'https://beige-bee-554340.hostingersite.com',
     },
     {
         title: 'Web Portfolio',
@@ -162,8 +162,8 @@ export const PROJECTS_DATA: {
 
 export const EXPERTISES: { title: string; content: string }[] = [
     {
-        title: 'Full-Stack Web Development',
-        content: 'Building fast, scalable MERN + Typescript apps with clean code and modern tech.',
+        title: 'Front-end Web Development',
+        content: 'Building fast, scalable Astro + Typescript apps with clean code and modern tech.',
     },
     {
         title: 'UI/UX<br/>& Animations',
