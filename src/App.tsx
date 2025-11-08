@@ -10,9 +10,8 @@ import {
     Navbar,
     ProjectsPage,
     TechPage,
-    TestimonialPage,
     TimelinePage,
-    WaveBackground,
+    WaveBackground
 } from '@Layouts';
 import { ProgressBar, ToTopButton } from '@UI';
 import gsap from 'gsap';

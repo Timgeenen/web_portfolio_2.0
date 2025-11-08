@@ -9,9 +9,8 @@ import {
     loadingPageAnimation,
     projectsPageAnimation,
     techPageAnimation,
-    testimonialPageAnimation,
     timelinePageAnimation,
-    waveBackgroundAnimation,
+    waveBackgroundAnimation
 } from '@Layouts';
 import { heroCircleAnimation, progressBarAnimation } from '@UI';
 import gsap from 'gsap';

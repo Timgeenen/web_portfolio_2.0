@@ -4,7 +4,6 @@ export default function boxGridAnimation() {
     const tl = gsap
         .timeline({
             scrollTrigger: {
-                invalidateOnRefresh: true,
                 trigger: '.bio-page-wrapper',
                 start: 'top 20%',
                 end: '+=2250px',
