@@ -11,7 +11,7 @@ function Footer() {
                         This website was designed by{' '}
                         <a
                             className="footer-authorLink"
-                            href="https://www.linkedin.com/in/aimitakanaga/"
+                            href="https://fugasha.com"
                             target="blank"
                         >
                             Aimi Takanaga
